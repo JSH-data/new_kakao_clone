@@ -1,0 +1,88 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen__channel1__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+#splash-screen {
+    background-color: var(--pink);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loveDays {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pink);
+}
+
+.loveDays__count {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1.1);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+  
+.loveDays:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}
