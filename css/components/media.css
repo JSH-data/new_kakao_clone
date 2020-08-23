@@ -10,9 +10,28 @@
     font-size: 32px;
     top: 0;
 }
-  
+
+#mode {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--pink);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+
 @media screen and (max-width: 620px) {
     #no-mobile {
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #mode {
         display: none;
     }
 }
